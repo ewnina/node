@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
-
-app.listen(3000, () =>{
-    console.log('worgin ');
-});
 
 app.get('/', (req, res) =>{
     res.send("welcome home page");
 })
+
+app.listen(port, () =>{
+    console.log('worgin ');
+});
